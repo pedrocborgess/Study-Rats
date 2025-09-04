@@ -1,0 +1,6 @@
+# Arquivos e pastas a serem ignorados pelo Git
+.env
+__pycache__/
+*.pyc
+fotos/
+study.db

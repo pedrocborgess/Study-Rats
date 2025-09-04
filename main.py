@@ -4,6 +4,7 @@ import re
 import os
 import logging
 from telegram import Update, BotCommand, InlineKeyboardButton, InlineKeyboardMarkup
+from dotenv import load_dotenv
 from telegram.ext import (
     Application,
     CommandHandler,
@@ -21,6 +22,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+load_dotenv()
 TOKEN = os.getenv("TOKEN")
 
 # --- BANCO DE DADOS ---
